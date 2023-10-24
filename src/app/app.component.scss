@@ -1,5 +1,44 @@
-h1{
-    font-family: 'Gotham';
-    color: var(--green);
-    font-weight: 700;
+header{
+    .container-menu{
+        background-color: var(--black);
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 150px;
+        .logo{
+            display: flex;
+            align-items: center;
+            img{
+                width: 100%;
+            }
+        }
+    }  
+    .container{
+        display: flex;
+        flex-direction: column;
+        padding: 80px;
+        max-width: 1400px;
+        margin: 0 auto;
+        h1{
+            font-family: 'Gotham';
+            font-size: 3.5rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--dark-grey)
+        }
+        p{
+            font-family: 'Gotham';
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin: 40px 0;
+        }
+    }
+    .divisao{
+        display: flex;
+        background-color: var(--dark-grey);
+        height: 15px;
+        width: 150px;
+        margin-top: 20px;
+    }
+
 }
