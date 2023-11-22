@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { formComponent } from './form-component/form.component';
 import { listcardComponent } from './list-card/list-card.component';
+import { AcademiasService } from './academias.service';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { listcardComponent } from './list-card/list-card.component';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [AcademiasService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
