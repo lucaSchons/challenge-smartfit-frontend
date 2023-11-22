@@ -1,0 +1,143 @@
+.section-list-card {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 80px;
+    margin-bottom: 50px;
+
+    .container__list-card {
+        background-color: var(--grey);
+        width: 100%;
+        border-radius: 5px;
+
+        .container-legend {
+            display: flex;
+            justify-content: space-between;
+            padding: 35px 15px;
+
+            .item {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                &-title {
+                    font-family: 'Gotham';
+                    font-size: 1rem;
+                    font-weight: 700;
+                    color: var(--light-dark);
+                    text-align: center;
+                }
+
+                .container-item {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    padding-top: 10px;
+
+                    .item-img {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        &:nth-child(-n+2) {
+                            padding-right: 10px;
+                        }
+
+                        img {
+                            display: flex;
+                            max-width: 60px;
+                        }
+
+                        &__text {
+                            font-weight: 500;
+                            font-size: 1.1rem;
+                            font-family: 'Gotham';
+                            color: var(--light-dark);
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.section-cards {
+    max-width: 1400px;
+    margin: 0 auto;
+    &__container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .container-cards {
+        display: flex;
+        padding: 15px;
+        .cards-list {
+            display: flex;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #f7f8f8;
+            width: 400px;
+            min-height: 500px;
+            box-shadow: 0px 0px 8px 2px #cdced0;
+            .body-card-item{
+                display: flex;
+                flex-direction: column;
+                .opened{
+                    font-family: 'Gotham';
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                    color: var(--green);
+                    padding-bottom: 5px;
+                }
+                .title{
+                    font-family: 'Gotham';
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                    color: var(--dark-grey);   
+                    padding-bottom: 5px;
+                }
+                .content{
+                    font-family: 'Gotham';
+                    font-size: 1rem;
+                    font-weight: 500;
+                    color: var(--dark-grey);  
+                    padding-bottom: 10px; 
+                }
+                .figure-list{
+                    display: flex;
+                    padding-top: 5px;
+                    .figure{
+                        display: flex;
+                        padding: 5px;
+                        max-width: 78px;
+                    }
+                }
+                .container-schedules{
+                    display: flex;
+                    flex-wrap: wrap;
+                    .container{
+                        display: flex;
+                        flex-direction: column;
+                        padding: 15px;
+                        .weekdays{
+                            font-family: 'Gotham';
+                            font-size: 1.5rem;
+                            font-weight: 700;
+                            color: var(--dark-grey);   
+                            padding-bottom: 5px;
+                        }
+                        .hour{
+                            font-family: 'Gotham';
+                            font-size: 1.2rem;
+                            font-weight: 500;
+                            color: var(--dark-grey);   
+                            padding-bottom: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

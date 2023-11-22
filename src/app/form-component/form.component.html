@@ -1,0 +1,61 @@
+<section class="section-form">
+    <div class="section-form__container">
+        <form>
+            <div class="section-form__header">
+                <div class="icon-hour">
+                    <img src="./assets/images/icon-hour.png">
+                </div>
+                <h2>Horário</h2>
+            </div>
+            <div class="section-form__content">
+                <span class="text-header">Qual período quer treinar?</span>
+                <hr>
+                <label class="container-label">
+                    <input type="checkbox" class="checkbox" id="check-manha">
+                    <span class="checkmark"></span>
+                    <div class="container-label__text">
+                        <span class="text">Manhã</span>
+                        <span class="text 2">06:00 às 12:00</span>
+                    </div>
+                  </label>
+                <hr>
+                <label class="container-label">
+                    <input type="checkbox" class="checkbox" id="check-tarde">
+                    <span class="checkmark"></span>
+                    <div class="container-label__text">
+                        <span class="text">Tarde</span>
+                        <span class="text 2">12:01 às 18:00</span>
+                    </div>
+                </label>
+                <hr>
+                <label class="container-label">
+                    <input type="checkbox" class="checkbox" id="check-noite">
+                    <span class="checkmark"></span>
+                    <div class="container-label__text">
+                        <span class="text">Noite</span>
+                        <span class="text 2">18:01 às 23:00</span>
+                    </div>
+                </label>
+                <hr>    
+            </div>
+            <div class="section-form__footer">
+                <div class="checkbox-unidade">
+                    <label class="checkbox-unidade-label">
+                        <input type="checkbox" class="checkbox" id="check-un-fechadas">
+                        <span class="checkmark"></span>
+                        <span class="text"> Exibir unidades fechadas</span>
+                    </label>
+                </div>
+                <div class="resultados-label">
+                    <span class="text">Resultados encontrados: 
+                        {{resultado}}
+                    </span>
+                </div>
+            </div>
+            <div class="container-button">
+                <button type="button" (click)="filtrarUnidades()" class="button-unidades"><span>Encontrar unidades</span></button>
+                <button type="button" class="button-limpar"><span>Limpar</span></button>
+            </div>   
+        </form>
+    </div>
+</section>

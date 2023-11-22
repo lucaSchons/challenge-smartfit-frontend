@@ -1,0 +1,119 @@
+<section class="section-list-card">
+    <div class="container__list-card">
+        <div class="container-legend">
+            <div class="item">
+                <span class="item-title">Máscara</span>
+                <div class="container-item">
+                    <div class="item-img">
+                        <img src="./assets/images/required-mask.png" />
+                        <span class="item-img__text">Obrigatório</span>
+                    </div>
+                    <div class="item-img">
+                        <img src="./assets/images/recommended-mask.png" />
+                        <span class="item-img__text">Recomendado</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <span class="item-title">Toalha</span>
+                <div class="container-item">
+                    <div class="item-img">
+                        <img src="./assets/images/required-towel.png" />
+                        <span class="item-img__text">Obrigatório</span>
+                    </div>
+                    <div class="item-img">
+                        <img src="./assets/images/recommended-towel.png" />
+                        <span class="item-img__text">Recomendado</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <span class="item-title">Bebedouro</span>
+                <div class="container-item">
+                    <div class="item-img">
+                        <img src="./assets/images/partial-fountain.png" />
+                        <span class="item-img__text">Parcial</span>
+                    </div>
+                    <div class="item-img">
+                        <img src="./assets/images/forbidden-fountain.png" />
+                        <span class="item-img__text">Proíbido</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <span class="item-title">Vestiários</span>
+                <div class="container-item">
+                    <div class="item-img">
+                        <img src="./assets/images/required-lockerroom.png" />
+                        <span class="item-img__text">Liberado</span>
+                    </div>
+                    <div class="item-img">
+                        <img src="./assets/images/partial-lockerroom.png" />
+                        <span class="item-img__text">Parcial</span>
+                    </div>
+                    <div class="item-img">
+                        <img src="./assets/images/forbidden-lockerroom.png" />
+                        <span class="item-img__text">Fechado</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section-cards">
+    <div class="section-cards__container">
+        <div class="container-cards" *ngFor="let academia of academias">
+            <ul class="cards-list">
+                <li class="card-item">
+                    <div class="container__card-item">
+                        <div class="body-card-item">
+                            <span class="opened" *ngIf="academia.opened === true; else other_content">Aberto</span>
+                            <ng-template #other_content>Fechado</ng-template>
+                            <span class="title">{{academia.title}}</span>
+                            <span class="content">{{academia.content}}</span>
+                            <hr>
+                            <div class="figure-list">
+                                <div *ngIf="academia.mask === 'required' else recommend_mask">
+                                    <img class="figure" src="./assets/images/required-mask.png" />
+                                </div>
+                                <ng-template #recommend_mask>
+                                    <img class="figure" src="./assets/images/recommended-mask.png" />
+                                </ng-template>
+                                <div *ngIf="academia.towel === 'required' else recommend_towel">
+                                    <img class="figure" src="./assets/images/required-towel.png" />
+                                </div>
+                                <ng-template #recommend_towel>
+                                    <img class="figure" src="./assets/images/recommended-towel.png" />
+                                </ng-template>
+                                <div *ngIf="academia.fountain === 'partial' else forbidden_fountain">
+                                    <img class="figure" src="./assets/images/partial-fountain.png" />
+                                </div>
+                                <ng-template #forbidden_fountain>
+                                    <img class="figure" src="./assets/images/forbidden-fountain.png" />
+                                </ng-template>
+                                <div *ngIf="academia.locker_room === 'allowed'">
+                                    <img class="figure" src="./assets/images/required-lockerroom.png" />
+                                </div>
+                                <div *ngIf="academia.locker_room === 'partial'">
+                                    <img class="figure" src="./assets/images/partial-lockerroom.png" />
+                                </div>
+                                <div *ngIf="academia.locker_room === 'closed'">
+                                    <img class="figure" src="./assets/images/forbidden-lockerroom.png" />
+                                </div>
+                            </div>
+                            <span class="container-schedules"
+                                *ngIf="academia.schedules && academia.schedules.length > 0">
+                                <div *ngFor="let schedule of academia.schedules">
+                                    <div class="container">
+                                        <span class="weekdays">{{schedule.weekdays}}</span>
+                                        <span class="hour">{{schedule.hour}}</span>
+                                    </div>
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
