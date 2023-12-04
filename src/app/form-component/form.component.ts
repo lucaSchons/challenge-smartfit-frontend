@@ -12,18 +12,10 @@ import { Observable, Subject, Subscription } from "rxjs";
 
 @Injectable()
 export class formComponent implements OnInit {
-    academias: Academia[] = [];
-    @Input() resultado!: number;
-    academiaAlteracao!: Observable<Academia[]>;
+    academias: Observable<Academia[]> = this.service.somaUnidadesFiltradas.asObservable();
     
-    constructor(private service: AcademiasService){
-        this.resultado = 0;
-        this.service.getObservable().subscribe(result => {
-            this.academias = result;
-            console.log("resultado dentro do form", this.academias.length);
-            this.resultado = this.academias.length;
-        })
-    }
+    constructor(private service: AcademiasService){}
+
     ngOnInit(){}
 
     filtrarUnidades() {
@@ -33,6 +25,17 @@ export class formComponent implements OnInit {
         const unidades_fechadas = document.querySelector("#check-un-fechadas") as HTMLInputElement;
 
         this.service.filtrarUnidades(manha.checked, tarde.checked, noite.checked, unidades_fechadas.checked);
+    }
+
+    onClean(){
+        const manha = document.querySelector("#check-manha") as HTMLInputElement;
+        const tarde = document.querySelector("#check-tarde") as HTMLInputElement;
+        const noite = document.querySelector("#check-noite") as HTMLInputElement;
+        const unidades_fechadas = document.querySelector("#check-un-fechadas") as HTMLInputElement;
+        manha.checked = false;
+        tarde.checked = false;
+        noite.checked = false;
+        unidades_fechadas.checked = false;
     }
 
 

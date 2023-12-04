@@ -62,15 +62,15 @@
 </section>
 <section class="section-cards">
     <div class="section-cards__container">
-        <div class="container-cards" *ngFor="let academia of academias">
+        <div class="container-cards" *ngFor="let academia of academias | async">
             <ul class="cards-list">
                 <li class="card-item">
                     <div class="container__card-item">
                         <div class="body-card-item">
                             <span class="opened" *ngIf="academia.opened === true; else other_content">Aberto</span>
-                            <ng-template #other_content>Fechado</ng-template>
+                            <ng-template #other_content><span class="closed">Fechado</span></ng-template>
                             <span class="title">{{academia.title}}</span>
-                            <span class="content">{{academia.content}}</span>
+                            <span class="content" [innerHTML]="academia.content"></span>
                             <hr>
                             <div class="figure-list">
                                 <div *ngIf="academia.mask === 'required' else recommend_mask">
