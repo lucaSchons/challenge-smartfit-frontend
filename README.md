@@ -26,27 +26,6 @@ Neste desafio, foi implementado as seguintes funcionalidades de acordo com as re
 ## 🎨 Layout
 
 O layout da aplicação foi baseado nos materiais disponibilizados, incluindo designs para dispositivos móveis e desktop, cores, imagens e fontes. A fidelidade ao layout proposto foi mantida, e a aplicação é responsiva para dispositivos móveis, tablets e desktops.
-
-## ⚙️ Como Executar
-
-Para executar a aplicação localmente, siga os passos abaixo:
-
-1. Clone este repositório:
-
-```bash
-  git clone https://github.com/Fernanda-Kipper/smartfit-frontend-challenge.git
-  cd smartfit-frontend-challenge
-
-```
-
-2. Instale as dependências
-
-```bash
-  npm install
-```
-
-3. Inicie a aplicação
-
 ```bash
   npm start
 ```
