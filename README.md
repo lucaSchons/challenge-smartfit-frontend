@@ -1,12 +1,22 @@
+[TYPESCRIPT__BADGE]: https://img.shields.io/badge/typescript-D4FAFF?style=for-the-badge&logo=typescript
+[ANGULAR__BADGE]: https://img.shields.io/badge/Angular-red?style=for-the-badge&logo=angular
+[PROJECT__BADGE]: https://img.shields.io/badge/📱Visit_this_project-000?style=for-the-badge&logo=project
+[PROJECT__URL]: https://challenge-smartfit.web.app/
+
+[![project][PROJECT__BADGE]][PROJECT__URL]
+
 # Desafio Frontend - Smart Fit
 
 Este repositório contém a solução para o desafio de [Front-end da Smart Fit](https://github.com/bioritmo/front-end-code-challenge-smartsite/tree/master) 
-Acessar projeto: https://challenge-smartfit.web.app/
+
+## Stack
+
+![angular][ANGULAR__BADGE]
+![typescript][TYPESCRIPT__BADGE]
 
 ## 📖 Sobre o desafio
 
 A Smart Fit, atuando no segmento de fitness, passou por várias mudanças durante a pandemia. Foi necessário desenvolver uma página para buscar unidades abertas ou fechadas para consulta e reserva. 
-
 Neste desafio, foi implementado as seguintes funcionalidades de acordo com as regras de negócio definidas:
 
 ### Funcionalidades
