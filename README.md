@@ -1,6 +1,7 @@
 # Desafio Frontend - Smart Fit
 
 Este repositório contém a solução para o desafio de [Front-end da Smart Fit](https://github.com/bioritmo/front-end-code-challenge-smartsite/tree/master) 
+Acessar projeto: https://challenge-smartfit.web.app/
 
 ## 📖 Sobre o desafio
 
