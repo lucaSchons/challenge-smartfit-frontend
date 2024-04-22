@@ -7,15 +7,14 @@
 
 Este repositório contém a solução para o desafio de [Front-end da Smart Fit](https://github.com/bioritmo/front-end-code-challenge-smartsite/tree/master) 
 
-## Para acessar o projeto
-[![project][PROJECT__BADGE]][PROJECT__URL]
-
 ## Stack
 
 ![angular][ANGULAR__BADGE]
 ![typescript][TYPESCRIPT__BADGE]
 
 ## 📖 Sobre o desafio
+
+[![project][PROJECT__BADGE]][PROJECT__URL]
 
 A Smart Fit, atuando no segmento de fitness, passou por várias mudanças durante a pandemia. Foi necessário desenvolver uma página para buscar unidades abertas ou fechadas para consulta e reserva. 
 Neste desafio, foi implementado as seguintes funcionalidades de acordo com as regras de negócio definidas:
