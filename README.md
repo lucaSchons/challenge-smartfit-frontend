@@ -1,7 +1,5 @@
 # Desafio Frontend - Smart Fit
 
-![Smart Fit](./src/assets/images/svg/logo.svg)
-
 Este repositório contém a solução para o desafio de [Front-end da Smart Fit](https://github.com/bioritmo/front-end-code-challenge-smartsite/tree/master) 
 
 ## 📖 Sobre o desafio
@@ -20,7 +18,6 @@ Neste desafio, foi implementado as seguintes funcionalidades de acordo com as re
 ### Regras de negócio
 - Filtra unidades abertas ou fechadas.
 - Filtra unidades por período de funcionamento.
-- Exibe a mensagem "Nenhuma unidade encontrada" quando não há resultados.
 - Valida e exibe os ícones corretos de acordo com o status da unidade.
 
 ## 🎨 Layout
