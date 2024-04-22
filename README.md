@@ -3,11 +3,12 @@
 [PROJECT__BADGE]: https://img.shields.io/badge/📱Visit_this_project-000?style=for-the-badge&logo=project
 [PROJECT__URL]: https://challenge-smartfit.web.app/
 
-[![project][PROJECT__BADGE]][PROJECT__URL]
-
 # Desafio Frontend - Smart Fit
 
 Este repositório contém a solução para o desafio de [Front-end da Smart Fit](https://github.com/bioritmo/front-end-code-challenge-smartsite/tree/master) 
+
+## Para acessar o projeto
+[![project][PROJECT__BADGE]][PROJECT__URL]
 
 ## Stack
 
